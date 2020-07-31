@@ -97,24 +97,38 @@ body h1, h2, h3 {
 	flex-basis: 45%;
 }
 
-.banner-item: :last-child {
-	align-items: right;
+.banner-item :last-child {
+	margin-left: auto;
+	margin-right: 0;
 }
 
-header input[type="button"] {
+p.button {
 	padding: 16px 32px;
 	background-color: #f05922;
 	color: #ffffff;
 	border: 0;
 	border-radius: 4px;
+	width: 100px;
+	font-size: 14px;
+	text-align: center;
 }
 
-header input[type="button"]:hover {
+p.button a {
+	color: #FFF;
+}
+
+p.button:hover {
 	background-color: #FFF;
 	color: #f05922;
 	border: 1px;
 	border-color: #f05922;
-	transition-property: color, background-color;
+	transition-property: background-color;
+	transition-duration: 1s;
+}
+
+p.button:hover > a {
+	color: #f05922;
+	transition-property: color;
 	transition-duration: 1s;
 }
 
@@ -123,7 +137,7 @@ header input[type="button"]:hover {
 	height: auto;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
 	.banner-container {
 		padding-right: 50px;
 		padding-left: 50px;
@@ -133,7 +147,7 @@ header input[type="button"]:hover {
 		width: 125px;
 	}
 
-	header input[type="button"] {
+	p.button {
 		padding: 12px 24px;
 	}
 }
@@ -209,7 +223,7 @@ p.about {
 	}
   } 
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 768px) {
 	.about-container {
 		padding-right: 20px;
 		padding-left: 20px;
@@ -498,4 +512,3 @@ img.seperator {
 	max-width: 150px;
  }
   /* Footer */
-  
