@@ -394,8 +394,7 @@ img.seperator {
    margin-top: 8px;
    margin-left: 0px;
    margin-bottom: -8px;
-   border-bottom-left-radius: 4px;
-   border-top-left-radius: 4px;
+   border-radius: 4px;
 }
 
 @media screen and (max-width: 767px) {
