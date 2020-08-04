@@ -392,8 +392,7 @@ img.seperator {
 .image img {
    max-width: 250px;
    margin-top: 8px;
-   margin-left: 0px;
-   margin-bottom: -8px;
+   margin-left: 16px;
    border-radius: 4px;
 }
 
